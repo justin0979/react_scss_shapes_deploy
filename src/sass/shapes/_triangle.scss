@@ -1,6 +1,53 @@
 .triangle {
   background-color: $color;
   border: 0.1rem #000000 solid;
-  height: 10%;
+  height: 90%;
   width: 90%;
+  margin: 1rem auto;
+
+  &__top {
+    height: 30%;
+    margin-top: 2%;
+    text-align: center;
+
+    &_left {
+      @include heightWidthColor_top;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
+
+    &_right {
+      @include heightWidthColor_top;
+      clip-path: polygon(0% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__center {
+    height: 30%;
+    margin: 0 auto;
+    text-align: center;
+
+    &_left {
+      @include heightWidthColor_center;
+      clip-path: polygon(0 00%, 100% 00%, 100% 100%);
+    }
+
+    &_center--top {
+      @include heightWidthColor_center;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    }
+
+    &_center--bottom {
+      @include heightWidthColor_center;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      transform: rotate(180deg) translateX(100%);
+      height: 26.5%;
+      width: 13.2%;
+      position: absolute;
+      z-index: 1;
+    }
+    &_right {
+      @include heightWidthColor_center;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+  }
 }
