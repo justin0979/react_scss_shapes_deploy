@@ -23,31 +23,43 @@
 
   &__center {
     height: 30%;
-    margin: 0 auto;
     text-align: center;
 
     &_left {
       @include heightWidthColor_center;
       clip-path: polygon(0 00%, 100% 00%, 100% 100%);
+      left: 7.5%;
+      width: 10%;
     }
 
     &_center--top {
       @include heightWidthColor_center;
       clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      transform: rotate(180deg);
+      left: 7.5%;
     }
 
     &_center--bottom {
       @include heightWidthColor_center;
       clip-path: polygon(0 100%, 100% 0, 100% 100%);
-      transform: rotate(180deg) translateX(100%);
-      height: 26.5%;
-      width: 13.2%;
-      position: absolute;
-      z-index: 1;
+      right: 7.5%;
     }
     &_right {
       @include heightWidthColor_center;
       clip-path: polygon(0 0, 100% 0, 0 100%);
+      right: 7.5%;
+      width: 10%;
+    }
+  }
+
+  &__bottom {
+    height: 30%;
+    text-align: center;
+
+    &_left {
+      @include heightWidthColor_bottom;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      left: 7.5%;
     }
   }
 }

@@ -1,7 +1,7 @@
 @mixin heightWidthColor_top {
   display: inline-block;
   height: 100%;
-  width: 7.5%;
+  width: 5%;
   background-color: $triangle-background-color;
 }
 
@@ -10,6 +10,14 @@
   height: 100%;
   width: 15%;
   background-color: $triangle-background-color;
+  position: relative;
   z-index: 0;
-  border: 1rem solid $triangle-background-color;
+}
+
+@mixin heightWidthColor_bottom {
+  display: inline-block;
+  height: 100%;
+  width: 15%;
+  background-color: $triangle-background-color;
+  position: relative;
 }

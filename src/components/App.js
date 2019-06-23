@@ -2,6 +2,7 @@ import React from 'react';
 
 import Top from './Top';
 import Center from './Center';
+import Bottom from './Bottom';
 import '../sass/main.scss';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <div className="triangle">
         <Top />
         <Center />
+        <Bottom />
       </div>
     </div>
   );
