@@ -17,7 +17,7 @@
 @mixin heightWidthColor_bottom {
   display: inline-block;
   height: 100%;
-  width: 15%;
+  width: $triangle-center-col-width;
   background-color: $triangle-background-color;
   position: relative;
 }
