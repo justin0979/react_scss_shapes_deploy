@@ -69,4 +69,9 @@
       right: 6.5%;
     }
   }
+
+  &:hover > * > * {
+    animation: makeCircle 3s linear 1;
+  }
 }
+
